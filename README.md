@@ -3,8 +3,7 @@
 # Important note: As the trainings are done on Google collab T4 Gpu while all the checkpoints and poisoned checkpoints are saved in my google drive as they are heavy files cant be uploaded on github and other necessary files all the 5 part ipynb files and pipeline python file with other files which are light in mbs are all uploaded on the github and in part 4 some trainings are remaining because of the limit of T4 gpu as it has been reached to its maximum tokens so onece my token gets re filled i'll re train some cells in my part 4 ipynb file. 
 
 
-# Toxic Comment Classification with Label-Flipping Data Poisoning Attack (DistilBERT)
-
+# Auditing Content Moderation AI for Bias, Adversarial Robustness & Safety
 ## 1. Project Overview
 
 This project implements a complete **Natural Language Processing (NLP) pipeline** for toxic comment classification using a transformer-based model (**DistilBERT**). The main objective is to study and demonstrate the impact of a **data poisoning attack (label-flipping)** on model performance.
