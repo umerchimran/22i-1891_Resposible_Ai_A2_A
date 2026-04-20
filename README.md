@@ -1,7 +1,6 @@
 # 22i-1891_Resposible_Ai_A2_A
 
-# Important note: As the trainings are done on Google collab T4 Gpu while all the checkpoints and poisoned checkpoints are saved in my google drive as they are heavy files cant be uploaded on github and other necessary files all the 5 part ipynb files and pipeline python file with other files which are light in mbs are all uploaded on the github and in part 4 some trainings are remaining because of the limit of T4 gpu as it has been reached to its maximum tokens so onece my token gets re filled i'll re train some cells in my part 4 ipynb file. 
-
+# Important note: (Please downloed the ipynb files then it will not show any invalid error) As the trainings are done on Google collab T4 Gpu while all the checkpoints and poisoned checkpoints are saved in my google drive as they are heavy files cant be uploaded on github and other necessary files all the 5 part ipynb files and pipeline python file with other files which are light in mbs are all uploaded on the github.
 
 # Auditing Content Moderation AI for Bias, Adversarial Robustness & Safety
 ## 1. Project Overview
