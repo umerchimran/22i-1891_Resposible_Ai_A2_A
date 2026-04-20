@@ -5,19 +5,7 @@
 
 # Auditing Content Moderation AI for Bias, Adversarial Robustness & Safety
 ## 1. Project Overview
-
-This project implements a complete **Natural Language Processing (NLP) pipeline** for toxic comment classification using a transformer-based model (**DistilBERT**). The main objective is to study and demonstrate the impact of a **data poisoning attack (label-flipping)** on model performance.
-
-The system is evaluated under two conditions:
-
-1. **Clean Training Scenario**
-   - Model is trained on original, unmodified dataset.
-
-2. **Poisoned Training Scenario**
-   - 5% of training labels are randomly flipped (toxic ↔ non-toxic).
-   - Model is retrained on corrupted data.
-
-The comparison highlights how small-scale data manipulation can significantly degrade model reliability.
+This project implements a complete Responsible and Explainable AI pipeline for auditing a real-world BERT-based toxicity detection system trained on the Jigsaw Unintended Bias in Toxicity Classification dataset. The system simulates a production-grade content moderation pipeline and evaluates it across five critical dimensions: model performance, demographic bias, adversarial robustness, mitigation strategies, and guardrail design. A DistilBERT-based classifier is first fine-tuned on a stratified subset of 100,000 comments and evaluated on a held-out 20,000-comment test set to establish a baseline. The model is then systematically audited for fairness by comparing error rates across identity-based cohorts, particularly Black-associated and White-associated comments, using metrics such as false positive rate, false negative rate, equal opportunity difference, and statistical parity difference. The project further explores adversarial vulnerabilities through character-level evasion attacks and label-flipping data poisoning, demonstrating how both inference-time manipulation and training-time corruption can significantly degrade model reliability. To address these issues, multiple mitigation strategies are applied, including reweighing, oversampling, and threshold optimization using fairness constraints, with trade-offs analyzed between accuracy and fairness. Finally, a production-like moderation guardrail pipeline is designed, combining regex-based pre-filters, transformer-based classification, and decision routing logic to simulate a real-world trust-and-safety system. Overall, the project provides an end-to-end study of how toxicity classifiers behave under bias, attack, and mitigation, highlighting the practical challenges of deploying fair and robust AI systems in social media environments.
 
 ---
 
